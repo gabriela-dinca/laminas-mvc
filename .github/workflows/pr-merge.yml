@@ -1,4 +1,4 @@
-name: Node Continuous Integration
+name: PHP Continuous Integration
 
 on:
   push:
