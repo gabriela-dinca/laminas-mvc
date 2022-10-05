@@ -81,7 +81,8 @@ class AlbumControllerTest extends AbstractHttpControllerTestCase
 //        todo $this->albumTable->getAlbum($id)->willReturn(new Album());
 //        Test that a non-POST request to addAction() displays an empty form.
 //        Test that an invalid data provided to addAction() re-displays the form, but with error messages.
-//        Test that absence of an identifier in the route parameters when invoking either editAction() or deleteAction() will redirect to the appropriate location.
+//        Test that absence of an identifier in the route parameters when invoking either editAction()
+//        or deleteAction() will redirect to the appropriate location.
 //        Test that an invalid identifier passed to editAction() will redirect to the album landing page.
 //        Test that non-POST requests to editAction() and deleteAction() display forms.
 }
