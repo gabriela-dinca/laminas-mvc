@@ -28,4 +28,4 @@ jobs:
         run: composer test
         working-directory: mvc
       - name: lint
-        run: composer cs-check
+        run: composer run-script cs-check
