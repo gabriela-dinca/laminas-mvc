@@ -27,5 +27,5 @@ jobs:
       - name: test
         run: composer test
         working-directory: mvc
-      - name: lint and analyse
-        run: composer cs-check && composer static-analysis
+      - name: lint
+        run: composer cs-check

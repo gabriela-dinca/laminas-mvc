@@ -68,6 +68,7 @@
         "symfony/var-dumper": "^5.4",
         "laminas/laminas-test": "^4.2",
         "phpunit/phpunit": "^9.5",
-        "phpspec/prophecy": "^1.15"
+        "phpspec/prophecy": "^1.15",
+        "vimeo/psalm": "^4.27"
     }
 }
