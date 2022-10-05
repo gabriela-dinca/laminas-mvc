@@ -29,3 +29,4 @@ jobs:
         working-directory: mvc
       - name: lint
         run: composer run-script cs-check
+        working-directory: mvc
