@@ -15,7 +15,10 @@ class AlbumTable
         $this->tableGateway = $tableGateway;
     }
 
-    public function fetchAll(): ResultSetInterface
+    /**
+     * @return ResultSetInterface
+     */
+    public function fetchAll()
     {
         return $this->tableGateway->select();
     }

@@ -1,0 +1,32 @@
+name: PHP Continuous Integration
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+      - development
+
+jobs:
+  build_and_preview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v2
+      - name: Setup PHP Action
+        uses: shivammathur/setup-php@2.21.2
+        with:
+          php-version: '8.0'
+          extensions: ext-tokenizer, mbstring
+          tools: vimeo/psalm, phpunit, phpcs
+      - name: install
+        run: composer install
+        working-directory: mvc
+      - name: test
+        run: composer test
+        working-directory: mvc
+      - name: lint
+        run: composer run-script cs-check
+        working-directory: mvc

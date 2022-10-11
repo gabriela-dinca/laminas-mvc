@@ -65,7 +65,6 @@ class AlbumController extends AbstractActionController
 
         try {
             $album = $this->table->getAlbum($id);
-
         } catch (\Exception $e) {
             return $this->redirect()->toRoute('album', ['action' => 'index']);
         }
@@ -103,7 +102,7 @@ class AlbumController extends AbstractActionController
     public function deleteAction()
     {
         $id = (int) $this->params()->fromRoute('id', 0);
-        if (!$id) {
+        if (! $id) {
             return $this->redirect()->toRoute('album');
         }
 
