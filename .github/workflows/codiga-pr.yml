@@ -20,4 +20,4 @@ jobs:
           max_complex_functions_rate: '0.001'
           max_long_functions_rate: '0.001'
           project_name: 'ideas'
-          max_timeout_sec: '600'
+          max_timeout_sec: '700'
